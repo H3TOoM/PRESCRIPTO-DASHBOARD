@@ -7,19 +7,19 @@ import AddDoctor from "./pages/AddDoctor";
 import DoctorList from "./pages/DoctorList";
 import AllApointments from "./pages/AllApointments";
 
-
-
 const App = () => {
   return (
-    <div>
+    <div className="bg-zinc-50">
       <Navbar />
-      <Sidebar />
-      <Routes>
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/add-doctor" element={<AddDoctor/>} />
-        <Route path="/doctor-list" element={<DoctorList/>} />
-        <Route path="/all-appointment" element={<AllApointments/>} />
-      </Routes>
+      <div className="flex gap-2 sm:gap-2 mt-5">
+        <Sidebar />
+        <Routes>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/add-doctor" element={<AddDoctor />} />
+          <Route path="/doctor-list" element={<DoctorList />} />
+          <Route path="/all-appointment" element={<AllApointments />} />
+        </Routes>
+      </div>
     </div>
   );
 };
