@@ -4,7 +4,16 @@
   font-family: Outfit;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+
 .active {
   background-color: #eef0f7;
   border-right: 4px solid #5F6FFF;
+}
+
+input{
+  outline: 0;
 }
